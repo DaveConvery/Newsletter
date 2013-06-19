@@ -1,0 +1,24 @@
+﻿<srcSchema _cs="EmailContentsRedGateUpdateV2 (rgs)" created="2013-06-19 14:19:26.530Z"
+           createdBy-id="0" desc="Revised Red Gate Update Template (June 2013)" entitySchema="xtk:srcSchema"
+           img="rgs:RedGate.png" label="EmailContentsRedGateUpdateV2" lastModified="2013-06-19 14:19:53.763Z"
+           mappingType="sql" md5="301AB260828E9F2D6CD5A970F4C3955E" modifiedBy-id="0"
+           name="EmailContentsRedGateUpdateV2" namespace="rgs" xtkschema="xtk:srcSchema">
+  <createdBy _cs="dave.convery (dave.convery)"/>
+  <modifiedBy _cs="dave.convery (dave.convery)"/>
+  <element desc="Revised Red Gate Update Template (June 2013)" img="rgs:RedGate.png"
+           label="EmailContentsRedGateUpdateV2" name="EmailContentsRedGateUpdateV2"
+           template="ncm:content" xmlChildren="true">
+    <compute-string expr="@name"/>
+    
+    <!-- Main Story Block (Top) -->
+    
+    <attribute label="Main Story Headline" name="MainStoryHeadline" type="string"/>
+    <attribute label="Main Story Body Text" name="MainStoryBody" type="string"/>
+    <attribute label="Main Story Link URL" name="MainStoryLinkURL" type="string"/>
+    <attribute label="Main Story Link Call to Action" name="MainStoryLinkCTA" type="string"/>
+    <attribute label="Main Story Image (Specific URL)" name="MainStoryImage" type="string"/>
+
+	<!-- Tool News -->    
+    
+  </element>
+</srcSchema>
