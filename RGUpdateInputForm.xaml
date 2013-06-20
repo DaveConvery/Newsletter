@@ -21,6 +21,15 @@
       </container>
 
     </container>
+    
+        <container label="Events" type="Frame">
+      <input xpath="@EventsHeadline"/>
+      <input xpath="@EventsText"/>
+      <input xpath="@EventsCTA"/>
+      <input xpath="@EventsURL"/>
+      <input xpath="@EventsSmallImageURL"/>
+      <input xpath="@EventsLargeImageURL"/>
+    </container>
 
     <container label="Tool News" type="frame">
 
@@ -51,15 +60,6 @@
         <input xpath="@ToolNewsStory3ImageAlt"/>
       </container>
 
-    </container>
-
-    <container label="Events" type="Frame">
-      <input xpath="@EventsHeadline"/>
-      <input xpath="@EventsText"/>
-      <input xpath="@EventsCTA"/>
-      <input xpath="@EventsURL"/>
-      <input xpath="@EventsSmallImageURL"/>
-      <input xpath="@EventsLargeImageURL"/>
     </container>
 
     <container label="Free Stuff" type="Frame">

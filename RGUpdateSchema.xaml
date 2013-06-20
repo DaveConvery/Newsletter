@@ -15,9 +15,9 @@
     <attribute label="Main Story Headline" name="MainStoryHeadline" type="string"/>
     <attribute label="Main Story Body Text" name="MainStoryBody" type="string"/>
     <attribute label="Main Story Link URL" name="MainStoryLinkURL" type="string"/>
-    <attribute label="Main Story Link Call to Action" name="MainStoryLinkCTA" type="string"/>
-    <attribute label="Main Story Image (Specific URL)" name="MainStoryImage" type="string"/>
-    <attribute label="Main Story Image Alt Tag" name="MainStoryImageAlt" type="string"/>
+    <attribute label="Main Story Call to Action" name="MainStoryLinkCTA" type="string"/>
+    <attribute label="Main Story Image" name="MainStoryImage" type="string"/>
+    <attribute label="Main Story Image Alt Text" name="MainStoryImageAlt" type="string"/>
 
 	<!-- Tool News --> 
 	
