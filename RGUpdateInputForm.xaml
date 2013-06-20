@@ -1,0 +1,111 @@
+﻿<form created="2013-06-20 09:44:44.624Z" createdBy-id="37932" img="rgs:RedGate.png" label="EmailContentsRedGateUpdateV2"
+      name="EmailContentsRedGateUpdateV2" namespace="rgs" type="contentForm" xtkschema="xtk:form">
+  <createdBy _cs="dave.convery (dave.convery)"/>
+
+  <enter>
+    <set expr="'Example For ' + @xtkschema" xpath="@label"/>
+    <set expr="'ExampleFor' + @xtkschema" xpath="@name"/>
+  </enter>
+
+  <container codepage="1252" colcount="2">
+
+    <container label="Main Story" type="frame">
+
+      <container label="Main Story Details" type="frame">
+        <input xpath="@MainStoryHeadline"/>
+        <input xpath="@MainStoryBody"/>
+        <input xpath="@MainStoryLinkURL"/>
+        <input xpath="@MainStoryLinkCTA"/>
+        <input xpath="@MainStoryImage"/>
+        <input xpath="@MainStoryImageAlt"/>
+      </container>
+
+    </container>
+
+    <container label="Tool News" type="frame">
+
+      <container label="Tool News Story 1" type="frame">
+        <input xpath="@ToolNewsStory1Headline"/>
+        <input xpath="@ToolNewsStory1Text"/>
+        <input xpath="@ToolNewsStory1URL"/>
+        <input xpath="@ToolNewsStory1CTA"/>
+        <input xpath="@ToolNewsStory1Image"/>
+        <input xpath="@ToolNewsStory1ImageAlt"/>
+      </container>
+
+      <container label="Tool News Story 2" type="frame">
+        <input xpath="@ToolNewsStory2Headline"/>
+        <input xpath="@ToolNewsStory2Text"/>
+        <input xpath="@ToolNewsStory2URL"/>
+        <input xpath="@ToolNewsStory2CTA"/>
+        <input xpath="@ToolNewsStory2Image"/>
+        <input xpath="@ToolNewsStory2ImageAlt"/>
+      </container>
+
+      <container label="Tool News Story 3" type="frame">
+        <input xpath="@ToolNewsStory3Headline"/>
+        <input xpath="@ToolNewsStory3Text"/>
+        <input xpath="@ToolNewsStory3URL"/>
+        <input xpath="@ToolNewsStory3CTA"/>
+        <input xpath="@ToolNewsStory3Image"/>
+        <input xpath="@ToolNewsStory3ImageAlt"/>
+      </container>
+
+    </container>
+
+    <container label="Events" type="Frame">
+      <input xpath="@EventsHeadline"/>
+      <input xpath="@EventsText"/>
+      <input xpath="@EventsCTA"/>
+      <input xpath="@EventsURL"/>
+      <input xpath="@EventsSmallImageURL"/>
+      <input xpath="@EventsLargeImageURL"/>
+    </container>
+
+    <container label="Free Stuff" type="Frame">
+
+      <container label="FreeStuff Story 1" type="frame">
+        <input xpath="@FreeStuffStory1Headline"/>
+        <input xpath="@FreeStuffStory1Subtitle"/>
+        <input xpath="@FreeStuffStory1Text"/>
+        <input xpath="@FreeStuffStory1URL"/>
+        <input xpath="@FreeStuffStory1CTA"/>
+        <input xpath="@FreeStuffStory1Image"/>
+        <input xpath="@FreeStuffStory1Alt"/>
+      </container>
+
+      <container label="FreeStuff Story 2" type="frame">
+        <input xpath="@FreeStuffStory2Headline"/>
+        <input xpath="@FreeStuffStory2Subtitle"/>
+        <input xpath="@FreeStuffStory2Text"/>
+        <input xpath="@FreeStuffStory2URL"/>
+        <input xpath="@FreeStuffStory2CTA"/>
+        <input xpath="@FreeStuffStory2Image"/>
+        <input xpath="@FreeStuffStory2Alt"/>
+      </container>
+
+      <container label="FreeStuff Story 3" type="frame">
+        <input xpath="@FreeStuffStory3Headline"/>
+        <input xpath="@FreeStuffStory3Subtitle"/>
+        <input xpath="@FreeStuffStory3Text"/>
+        <input xpath="@FreeStuffStory3URL"/>
+        <input xpath="@FreeStuffStory3CTA"/>
+        <input xpath="@FreeStuffStory3Image"/>
+        <input xpath="@FreeStuffStory3Alt"/>
+      </container>
+
+      <container label="FreeStuff Story 4" type="frame">
+        <input xpath="@FreeStuffStory4Headline"/>
+        <input xpath="@FreeStuffStory4Subtitle"/>
+        <input xpath="@FreeStuffStory4Text"/>
+        <input xpath="@FreeStuffStory4URL"/>
+        <input xpath="@FreeStuffStory4CTA"/>
+        <input xpath="@FreeStuffStory4Image"/>
+        <input xpath="@FreeStuffStory4Alt"/>
+      </container>
+
+    </container>
+
+  </container>
+
+</form>

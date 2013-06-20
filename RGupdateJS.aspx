@@ -1,4 +1,16 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<%
+
+var defer = function(blockText) {
+
+  // We must hide the jsp escape sequences from this round of
+  // JSP processing, there will be another round subsequently
+  //
+  return '<' + '%' + blockText + '%' + '>';
+};
+
+%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <body>
@@ -193,14 +205,14 @@
 				<table width="600px" align="center" style="border-collapse:collapse; background-color:#ffffff; text-align:left;" cellpadding="0" cellspacing="0" border="0">
 					<tbody>
 						<tr>
-							<td width="380" style="padding-left:20px; padding-right: 10px; padding-bottom: 20px; border-collapse:collapse; width:380px"><a href="#" style="text-decoration:none; Arial, 'Helvetica Neue', Sans Serif; color:#CC0000; font-weight:bold; font-size:20pt; line-height: 140%;"><span style="font-family: Arial, 'Helvetica Neue', Sans Serif; color:#CC0000; font-weight:bold; font-size:20pt; line-height: 140%; text-decoration:none">A Headline for the Main Story Goes Here</span></a>
+							<td width="380" style="padding-left:20px; padding-right: 10px; padding-bottom: 20px; border-collapse:collapse; width:380px"><a href="<%= content.@MainStoryLinkURL %>" style="text-decoration:none; Arial, 'Helvetica Neue', Sans Serif; color:#CC0000; font-weight:bold; font-size:20pt; line-height: 140%;"><span style="font-family: Arial, 'Helvetica Neue', Sans Serif; color:#CC0000; font-weight:bold; font-size:20pt; line-height: 140%; text-decoration:none"><%= content.@MainStoryHeadline %></span></a>
 							<br />	
-							<div style="color:#6F6F6F; font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:130%;">Wallop smack zap bam whack gadzooks bwom pok. Koom crackle snap vrooaaaa boom crash smack screeeeam crash kerplunk boom kerplunk pop! Twak smack blam kerplunk screeeeam kaboom crack boom screeeeam blam kaboom wham snap. Gadzooks crash ping vrooaaaa koom koom bwom vroom zap. Ping roar crash roar tonk wham koom snap tonk pop.</div>
+							<div style="color:#6F6F6F; font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:130%;"><%= content.@MainStoryBody %></div>
 							<br />
-							<a href="#" style="font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:150%; font-weight:bold; text-decoration:none; color:#56A753">And a link goes right here.</a>
+							<a href="<%= content.@MainStoryLinkURL %>" style="font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:150%; font-weight:bold; text-decoration:none; color:#56A753"><%= content.@MainStoryLinkCTA %></a>
 							</td>
 							<td	align="right" width="220" valign="middle" style="padding-right:20px; border-collapse:collapse; width: 220px">
-								<a href="#"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/book_placeholder.png" alt="A big picture of some kind" /></a>
+								<a href="<%= content.@MainStoryLinkURL %>"><img src="<%= content.@MainStoryImage %>" alt="<%= content.@MainStoryImageAlt %>" /></a>
 							</td>
 						</tr>
 					</tbody>
@@ -217,27 +229,27 @@
 						<td style="padding-top:20px; padding-right:20px; border-collapse:collapse;" align="right"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/tool_placeholder.png" alt="Tool News" /></td>
 					</tr>
 					<tr>
-						<td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="#"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/dm_placeholder.png" alt="A tool logo" /></a></td>
+						<td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="#"><img src="<%= content.@ToolNewsStory1Image %>" alt="<%= content.@ToolNewsStory1ImageAlt %>" /></a></td>
 						<td valign="top" width="450" style="border-collapse:collapse; width:450px">
-							<div style="padding-top: 20px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><span style="text-decoration:none">Golly, a headline</span></div>
-							<div class="text" style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text">Wallop smack zap bam whack gadzooks bwom pok. Koom crackle snap vrooaaaa boom crash smack screeeeam crash kerplunk boom kerplunk pop! Twak smack blam kerplunk screeeeam kaboom crack boom screeeeam blam kaboom wham snap.</span></div>
-							<div style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="#">We'd appreciate you clicking this</a></div>
+							<div style="padding-top: 20px; padding-right:20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory1URL %>"></a><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory1Headline %></span></div>
+							<div class="text" style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory1Text %></span></div>
+							<div style="padding-top: 10px; padding-right:20px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory1URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory1CTA %></span></a></div>
 						</td>
 					</tr>
 					<tr>
-						<td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse: collapse; width:150px;"><a href="#"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/search_placeholder.png" alt="A tool logo" /></a></td>
-						<td valign="top" width="450" style="width:450px; border-collapse:collapse">
-							<div style="padding-top: 20px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><span style="text-decoration:none">Golly, a headline</span></div>
-							<div style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;">Wallop smack zap bam whack gadzooks bwom pok. Koom crackle snap vrooaaaa boom crash smack screeeeam crash kerplunk boom kerplunk pop! Twak smack blam kerplunk screeeeam kaboom crack boom screeeeam blam kaboom wham snap.</div>
-							<div style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="#">We'd appreciate you clicking this</a></div>
+						<td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="#"><img src="<%= content.@ToolNewsStory2Image %>" alt="<%= content.@ToolNewsStory2ImageAlt %>" /></a></td>
+						<td valign="top" width="450" style="border-collapse:collapse; width:450px">
+							<div style="padding-top: 20px; padding-right:20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory2URL %>"></a><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory2Headline %></span></div>
+							<div class="text" style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory2Text %></span></div>
+							<div style="padding-top: 10px; padding-right:20px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory2URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory2CTA %></span></a></div>
 						</td>
 					</tr>
 					<tr>
-						<td width="150" valign="middle" style="padding-left:20px; padding-top:20px; padding-bottom: 20px; border-collapse: collapse; width:150px;"><a href="#"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/gears_placeholder.png" alt="A tool logo" /></a></td>
-						<td valign="top" width="450" style="width:450px; border-collapse:collapse; padding-bottom: 20px;">
-							<div style="padding-top: 20px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><span style="text-decoration:none">Golly, a headline</span></div>
-							<div style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;">Wallop smack zap bam whack gadzooks bwom pok. Koom crackle snap vrooaaaa boom crash smack screeeeam crash kerplunk boom kerplunk pop! Twak smack blam kerplunk screeeeam kaboom crack boom screeeeam blam kaboom wham snap.</div>
-							<div style="padding-top: 10px; padding-right:20px; padding-bottom: 20px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="#">We'd appreciate you clicking this</a></div>
+						<td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="#"><img src="<%= content.@ToolNewsStory3Image %>" alt="<%= content.@ToolNewsStory3ImageAlt %>" /></a></td>
+						<td valign="top" width="450" style="border-collapse:collapse; width:450px">
+							<div style="padding-top: 20px; padding-right:20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory3URL %>"></a><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory3Headline %></span></div>
+							<div class="text" style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory3Text %></span></div>
+							<div style="padding-top: 10px; padding-right:20px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory3URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory3CTA %></span></a></div>
 						</td>
 					</tr>
 				</table>
@@ -254,14 +266,14 @@
 						</tr>
 						<tr>
 							<td colspan="2" style="padding-left:20px; padding-right: 180px; border-collapse: collapse;">
-								<div style="font-family: Arial, 'Helvetica Neue', Sans Serif; font-weight:bold; font-size:20pt; line-height: 140%;"><a style="text-decoration:none; color:#CC0000;" href="#"><span style="text-decoration:none; color:#CC0000;">Event-Based Headline</span></a></div>
-								<div style="color:#6F6F6F; font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:130%;">Wallop smack zap bam whack gadzooks bwom pok. Koom crackle snap vrooaaaa boom crash smack screeeeam crash kerplunk boom kerplunk pop! Twak smack blam kerplunk screeeeam kaboom crack boom screeeeam blam kaboom wham snap. Gadzooks crash ping vrooaaaa koom koom bwom vroom zap. Ping roar crash roar tonk wham koom snap tonk pop.<div style="padding-top: 15px; padding-bottom: 15px"><a href="#" style="font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:150%; font-weight:bold; text-decoration:none; color:#56A753">And a link goes right here.</a></div>
-								</div>
+								<div style="font-family: Arial, 'Helvetica Neue', Sans Serif; font-weight:bold; font-size:20pt; line-height: 140%;"><a style="text-decoration:none; color:#CC0000;" href="<%= content.@EventsURL %>"><span style="text-decoration:none; color:#CC0000;"><%= content.@EventsHeadline %></span></a></div>
+								<div style="color:#6F6F6F; font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:130%;"><%= content.@EventsURL %></div>
+								<div style="padding-top: 15px; padding-bottom: 15px"><a href="<%= content.@EventsURL %>" style="font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:150%; font-weight:bold; text-decoration:none; color:#56A753"><%= content.@EventsCTA %></a></div>
 							</td>
 						</tr>
 						<tr style="border:none;">
-							<td style="padding-left: 20px; border:none; border-collapse: collapse;"><img style="border:none;" src="http://assets.red-gate.com/external/red-gate-email/redgate-update/sitc_placeholder.png" alt="Red Gate SQL in the City" /></td>
-							<td valign="baseline" align="right" style="border:none; border-collapse: collapse;"><img style="border:none;" src="http://assets.red-gate.com/external/red-gate-email/redgate-update/sitcsteve_placeholder.png" alt="A Terrifying, Armless Steve Jones Welcomes You to Red Gate SQL in the City" /></td>
+							<td style="padding-left: 20px; border:none; border-collapse: collapse;"><a href="<%= content.@EventsURL %>"><img style="border:none;" src="<%= content.@EventsSmallImageURL %>" alt="<%= content.@EventsSmallImageAlt %>" /></a></td>
+							<td valign="baseline" align="right" style="border:none; border-collapse: collapse;"><a href="<%= content.@EventsURL %>"><img style="border:none;" src="<%= content.@EventsLargeImageURL %>" alt="<%= content.@EventsLargeImageURL %>" /></a></td>
 						</tr>
 					</table>
 				</td>
@@ -282,57 +294,57 @@
 						</tr>
 						<tr valign="bottom">
 							<td width="20" style="width: 20px;">&nbsp;</td>
-							<td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px;"><a href="#">
-								<img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/book1_placeholder.png" alt="The First Free Thing Alt Text" /></a>
+							<td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px;"><a href="<%= content.@FreeStuffStory1URL %>">
+								<img src="<%= content.@FreeStuffStory1Image %>" alt="<%= content.@FreeStuffStory1Alt %>" /></a>
 							</td>
 							<td width="20" style="width: 20px;">&nbsp;</td>
-							<td width="270" style="border-collapse: collapse; width: 270px;">
-								<a href="#"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/video2_placeholder.png" alt="The Second Free Thing Alt Text" /></a>
+							<td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px;"><a href="<%= content.@FreeStuffStory2URL %>">
+								<img src="<%= content.@FreeStuffStory2Image %>" alt="<%= content.@FreeStuffStory2Alt %>" /></a>
 							</td>
 							<td width="20" style="width: 20px;">&nbsp;</td>
 						</tr>
 						<tr>
 							<td width="20" style="width: 20px;">&nbsp;</td>
 							<td width="270" style=" border-collapse: collapse; width:270px;">
-								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;">The First Title</div>
-								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;">Then a subtitle</div>
-								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;">A really short bit of text to clarify and titilate, to inform and entertain, to dazzle and amaze, I'm starting to realise I should have used Lorem Ipsum at this point if I'm honest.</div>
-								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="#"><span style="text-decoration:none; color:#56A753">Then finally a link</span></a></div>
+								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@FreeStuffStory1URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@FreeStuffStory1Headline %></span></a></div>
+								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;"><%= content.@FreeStuffStory1Subtitle %></div>
+								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory1Text %></div>
+								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory1URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory1CTA %></span></a></div>
 							</td>
 							<td width="20" style="width: 20px;">&nbsp;</td>	
-							<td valign="top" width="270" style="border-collapse: collapse; width: 270px; ">
-								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;">The Second Title</div>
-								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;">Then a subtitle</div>
-								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;">A really short bit of text to clarify and titilate, to inform and entertain, to dazzle and amaze, I'm starting to realise I should have used Lorem Ipsum at this point if I'm honest.</div>
-								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="#"><span style="text-decoration:none; color:#56A753">Then finally a link</span></a></div>
+							<td width="270" style=" border-collapse: collapse; width:270px;">
+								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@FreeStuffStory2URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@FreeStuffStory2Headline %></span></a></div>
+								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;"><%= content.@FreeStuffStory2Subtitle %></div>
+								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory2Text %></div>
+								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory2URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory2CTA %></span></a></div>
 							</td>
 							<td width="20" style="width: 20px;">&nbsp;</td>
 						</tr>
 						<tr valign="bottom">
 							<td width="20" style="width: 20px;">&nbsp;</td>
-							<td width="270" style=" padding-top:20px; border-collapse: collapse; width: 270px;"><a href="#">
-								<img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/book2_placeholder.png" alt="The Third Free Thing Alt Text" /></a>
+							<td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px;"><a href="<%= content.@FreeStuffStory3URL %>">
+								<img src="<%= content.@FreeStuffStory3Image %>" alt="<%= content.@FreeStuffStory3Alt %>" /></a>
 							</td>
 							<td width="20" style="width: 20px;">&nbsp;</td>
-							<td width="270" style="border-collapse: collapse; width: 270px; ">
-								<a href=""><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/video1_placeholder.png" alt="The Fourth Free Thing Alt Text" /></a>
+							<td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px;"><a href="<%= content.@FreeStuffStory4URL %>">
+								<img src="<%= content.@FreeStuffStory4Image %>" alt="<%= content.@FreeStuffStory4Alt %>" /></a>
 							</td>
 							<td width="20" style="width: 20px;">&nbsp;</td>
 						</tr>
 						<tr style="padding-bottom: 20px; border-collapse: collapse;">
 							<td width="20" style="width: 20px;">&nbsp;</td>
-							<td width="270" style=" padding-bottom: 20px; border-collapse: collapse; width: 270px;">
-								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;">The Third Title</div>
-								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;">Then a subtitle</div>
-								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;">A really short bit of text to clarify and titilate, to inform and entertain, to dazzle and amaze, I'm starting to realise I should have used Lorem Ipsum at this point if I'm honest.</div>
-								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="#"><span style="text-decoration:none; color:#56A753">Then finally a link</span></a></div>
+							<td width="270" style=" border-collapse: collapse; width:270px;">
+								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@FreeStuffStory3URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@FreeStuffStory3Headline %></span></a></div>
+								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;"><%= content.@FreeStuffStory3Subtitle %></div>
+								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory3Text %></div>
+								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory3URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory3CTA %></span></a></div>
 							</td>
 							<td width="20" style="width: 20px;">&nbsp;</td>	
-							<td valign="top" width="270" style="padding-bottom: 20px; border-collapse: collapse; width:270px; ">
-								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;">The Fourth Title</div>
-								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;">Then a subtitle</div>
-								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;">A really short bit of text to clarify and titilate, to inform and entertain, to dazzle and amaze, I'm starting to realise I should have used Lorem Ipsum at this point if I'm honest.</div>
-								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753"  href="#"><span style="text-decoration:none; color:#56A753">Then finally a link</span></a></div>
+							<td width="270" style=" border-collapse: collapse; width:270px;">
+								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@FreeStuffStory4URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@FreeStuffStory4Headline %></span></a></div>
+								<div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;"><%= content.@FreeStuffStory4Subtitle %></div>
+								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory4Text %></div>
+								<div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory4URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory4CTA %></span></a></div>
 							</td>
 							<td width="20" style="width: 20px;">&nbsp;</td>
 						</tr>
