@@ -193,7 +193,11 @@ var defer = function(blockText) {
         <td>
           <table width="600" style="border-collapse:collapse; background-color:#ffffff; width:600px" cellpadding="0" cellspacing="0" border="0" align="center">
             <tr>
-              <td width="300px" valign="top" style="padding-left:20px; padding-top:20px; padding-bottom:50px; color:#CC0000; font-weight:bold; font-size:14pt; font-family: Arial, 'Helvetica Neue', Sans Serif; border-collapse:collapse;">The Red Gate Update</td>
+              <td width="300px" valign="top" style="padding-left:20px; padding-top:20px; padding-right: 10px; padding-bottom:10px; color:#6F6F6F; font-size: 8pt; font-family: Arial, 'Helvetica Neue', Sans Serif; border-collapse:collapse;">This is an email from Red Gate. To ensure you receive these emails, please add <a href="mailto:hellofrom@red-gate.com">hellofrom@red-gate.com</a> to your safe senders list.</td>
+              <td width="300px" valign="top" align="right" style="padding-right:20px; padding-top:20px; padding-left: 10px; border-collapse:collapse; font-size: 8pt; color:#6F6F6F; font-family: Arial, 'Helvetica Neue', Sans Serif; padding-bottom: 10px">If you are unable to view this email correctly, you can also <a href="#" _label="Mirror Page" _type="mirrorPage">read it online</a>.</td>
+            </tr>
+            <tr>
+              <td width="300px" valign="top" style="padding-left:20px; padding-top:20px; padding-bottom:40px; color:#CC0000; font-weight:bold; font-size:14pt; font-family: Arial, 'Helvetica Neue', Sans Serif; border-collapse:collapse;">The Red Gate Update</td>
               <td width="300px" valign="top" align="right" style="padding-right:20px; padding-top:20px; border-collapse:collapse;"><a href="http://www.red-gate.com"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/redgate_logo_top.png" alt="Red Gate" /></a></td>
             </tr>
           </table>
@@ -382,6 +386,15 @@ var defer = function(blockText) {
             <td width="200" style="padding-left:20px; padding-bottom:20px; border-collapse: collapse; width: 200px"><a style="color:#ffffff; text-decoration:none; font-family: Arial, 'Helvetica Neue', Sans Serif;" href="http://www.red-gate.com">www.red-gate.com</a></td>
             <td style="padding-bottom:20px; padding-left:10px; border-collapse: collapse;"><a style="color:#ffffff; text-decoration:none; font-family: Arial, 'Helvetica Neue', Sans Serif;" href="mailto:info@red-gate.com">info@red-gate.com</a></td>
           </tr>
+        </table>
+        <table class="LegalText" align="center" width="600" style="width::600px; background-color:#F3F3F3; border-collapse:collapse" cellpadding="0" cellspacing="0" border="0">
+        	<tbody>
+        		<tr>
+        			<td style="padding-left: 20px; padding-right: 20px; color:#6F6F6F;">
+        				<%= defer("@include view='RedGateFooterWithCopyright'") %>
+        			</td>
+        		</tr>
+        	</tbody>
         </table>
         <!-- End footer -->
         </td>
