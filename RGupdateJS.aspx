@@ -198,7 +198,7 @@ var defer = function(blockText) {
             </tr>
             <tr>
               <td width="300px" valign="top" style="padding-left:20px; padding-top:20px; padding-bottom:40px; color:#CC0000; font-weight:bold; font-size:14pt; font-family: Arial, 'Helvetica Neue', Sans Serif; border-collapse:collapse;">The Red Gate Update</td>
-              <td width="300px" valign="top" align="right" style="padding-right:20px; padding-top:20px; border-collapse:collapse;"><a href="http://www.red-gate.com"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/redgate_logo_top.png" alt="Red Gate" /></a></td>
+              <td width="300px" valign="top" align="right" style="padding-right:20px; padding-top:20px; border-collapse:collapse;"><a href="http://www.red-gate.com"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/RG-update-logo-black.png" alt="Red Gate" /></a></td>
             </tr>
           </table>
         </td>
@@ -230,7 +230,7 @@ var defer = function(blockText) {
         <table width="600" style="border-collapse:collapse; background-color:#F3F3F3; width:600px" cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
             <td width="150" style="width:150px; border-collapse:collapse; padding-top:20px; padding-left:20px;"><div style="border-collapse:collapse; color:#9C9B9B; font-weight:bold; font-size:18pt; font-family:Arial, Helvetica, sans-serif;">Tool News</div></td>
-            <td style="padding-top:20px; padding-right:20px; border-collapse:collapse;" align="right"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/tool_placeholder.png" alt="Tool News" /></td>
+            <td style="padding-top:20px; padding-right:20px; border-collapse:collapse;" align="right"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/tool.png" alt="Tool News" /></td>
           </tr>
           <tr>
             <td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="#"><img src="<%= content.@ToolNewsStory1Image %>" alt="<%= content.@ToolNewsStory1ImageAlt %>" /></a></td>
@@ -266,7 +266,7 @@ var defer = function(blockText) {
           <table width="600" style="background-color:#ffffff; border-collapse:collapse; width:600px;" align="center" cellpadding="0" cellspacing="0" border="0">
             <tr>
               <td width="150" style="border-collapse: collapse; width:150px; padding-top:20px; padding-left:20px;"><div style="border-collapse:collapse; color:#9C9B9B; font-weight:bold; font-size:18pt; font-family:Arial, Helvetica, sans-serif;">Events</div></td>
-              <td align="right" style="padding-right:20px; padding-top:20px;"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/events_placeholder.png" alt="events" /></td>
+              <td align="right" style="padding-right:20px; padding-top:20px;"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/events.png" alt="events" /></td>
             </tr>
             <tr>
               <td colspan="2" style="padding-left:20px; padding-right: 180px; border-collapse: collapse;">
@@ -293,7 +293,7 @@ var defer = function(blockText) {
               <td width="20" style="width: 20px;">&nbsp;</td>
               <td width="270" style="border-collapse: collapse; width:270px; padding-top:20px;"><div style="border-collapse:collapse; color:#9C9B9B; font-weight:bold; font-size:18pt; font-family:Arial, Helvetica, sans-serif;">Free Stuff</div></td>
               <td width="20" style="width: 20px">&nbsp;</td>
-              <td width="270" style="padding-top:20px; border-collapse:collapse; width: 270px;" align="right"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/freestuff_placeholder.png" alt="Free Stuff" /></td>
+              <td width="270" style="padding-top:20px; border-collapse:collapse; width: 270px;" align="right"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/freestuff.png" alt="Free Stuff" /></td>
               <td width="20" style="width: 20px">&nbsp;</td>
             </tr>
             <tr valign="bottom">
@@ -361,19 +361,19 @@ var defer = function(blockText) {
         <table class="footer" width="600" style="background-color:#CC0000; border-collapse:collapse" cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
             <td width="20" style="border-collapse:collapse; padding-left:20px; padding-top:20px; padding-right:20px; width: 20px;" >
-              <a href="https://twitter.com/redgate"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/twitter_placeholder.png" alt="Twitter" /></a>
+              <a href="https://twitter.com/redgate"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/twitter.png" alt="Twitter" /></a>
             </td>
             <td width="20" style="border-collapse:collapse; padding-right:20px; padding-top:20px; width: 20px;" >
-              <a href="http://www.facebook.com/RedGateSoftwareTools"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/facebook_placeholder.png" alt="Facebook" /></a>
+              <a href="http://www.facebook.com/RedGateSoftwareTools"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/facebook.png" alt="Facebook" /></a>
             </td>
             <td width="20" style="border-collapse:collapse; padding-right:20px; padding-top:20px; width: 20px" >  
-              <a href="https://plus.google.com/+redgate/posts"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/googleplus_placeholder.png" alt="Google+" /></a>
+              <a href="https://plus.google.com/+redgate/posts"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/googleplus.png" alt="Google+" /></a>
             </td>
             <td style="border-collapse:collapse; padding-right:20px; padding-top:20px;" >  
-              <a href="http://www.linkedin.com/company/red-gate-software"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/linkedin_placeholder.png" alt="LinkedIn" /></a>
+              <a href="http://www.linkedin.com/company/red-gate-software"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/linkedin.png" alt="LinkedIn" /></a>
             </td>
             <td align="right" style="padding-right: 20px; padding-top:20px; border-collapse:collapse">
-              <a href="http://red-gate.com"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/rglogofooter_placeholder.png" alt="Red Gate" /></a>
+              <a href="http://red-gate.com"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/RG-update-RG-logo_white.png" alt="Red Gate" /></a>
             </td>
           </tr>
         </table>
