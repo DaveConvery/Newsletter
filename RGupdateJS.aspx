@@ -193,7 +193,7 @@ var defer = function(blockText) {
         <td>
           <table width="600" style="border-collapse:collapse; background-color:#ffffff; width:600px;" cellpadding="0" cellspacing="0" border="0" align="center">
             <tr>
-              <td width="300px" valign="top" style="padding-left:20px; padding-top:20px; padding-right: 10px; padding-bottom:10px; color:#6F6F6F; font-size: 8pt; font-family: Arial, 'Helvetica Neue', Sans Serif; border-collapse:collapse;">This is an email from Red Gate. To ensure you receive these emails, please add <a href="mailto:hellofrom@red-gate.com">hellofrom@red-gate.com</a> to your safe senders list.</td>
+              <td width="300px" valign="top" style="padding-left:20px; padding-top:20px; padding-right: 10px; padding-bottom:10px; color:#6F6F6F; font-size: 8pt; font-family: Arial, 'Helvetica Neue', Sans Serif; border-collapse:collapse;">This is an email from Red Gate. To ensure you receive these emails, please add <a href="mailto:news@red-gate.com">news@red-gate.com</a> to your safe senders list.</td>
               <td width="300px" valign="top" align="right" style="padding-right:20px; padding-top:20px; padding-left: 10px; border-collapse:collapse; font-size: 8pt; color:#6F6F6F; font-family: Arial, 'Helvetica Neue', Sans Serif; padding-bottom: 10px;"><%= defer("@include view='RGUpdateV2MirrorPage'") %></td>
             </tr>
             <tr>
@@ -233,27 +233,27 @@ var defer = function(blockText) {
             <td style="padding-top:20px; padding-right:20px; border-collapse:collapse;" align="right"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/tool.png" alt="Tool News" /></td>
           </tr>
           <tr>
-            <td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="#"><img src="<%= content.@ToolNewsStory1Image %>" alt="<%= content.@ToolNewsStory1ImageAlt %>" /></a></td>
-            <td valign="top" width="450" style="border-collapse:collapse; width:450px">
-              <div style="padding-top: 20px; padding-right:20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory1URL %>"></a><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory1Headline %></span></div>
-              <div class="text" style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory1Text %></span></div>
-              <div style="padding-top: 10px; padding-right:20px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory1URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory1CTA %></span></a></div>
+            <td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="<%= content.@ToolNewsStory1URL %>"><img src="<%= content.@ToolNewsStory1Image %>" alt="<%= content.@ToolNewsStory1ImageAlt %>" /></a></td>
+            <td valign="top" width="450" style="border-collapse:collapse; width:450px; padding-right:20px;">
+              <div style="padding-top: 20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory1URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory1Headline %></span></a></div>
+              <div class="text" style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory1Text %></span></div>
+              <div style="padding-top: 10px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory1URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory1CTA %></span></a></div>
             </td>
           </tr>
           <tr>
-            <td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="#"><img src="<%= content.@ToolNewsStory2Image %>" alt="<%= content.@ToolNewsStory2ImageAlt %>" /></a></td>
-            <td valign="top" width="450" style="border-collapse:collapse; width:450px">
-              <div style="padding-top: 20px; padding-right:20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory2URL %>"></a><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory2Headline %></span></div>
-              <div class="text" style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory2Text %></span></div>
-              <div style="padding-top: 10px; padding-right:20px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory2URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory2CTA %></span></a></div>
+            <td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="<%= content.@ToolNewsStory2URL %>"><img src="<%= content.@ToolNewsStory2Image %>" alt="<%= content.@ToolNewsStory2ImageAlt %>" /></a></td>
+            <td valign="top" width="450" style="border-collapse:collapse; width:450px; padding-right:20px;">
+              <div style="padding-top: 20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory2URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory2Headline %></span></a></div>
+              <div class="text" style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory2Text %></span></div>
+              <div style="padding-top: 10px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory2URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory2CTA %></span></a></div>
             </td>
           </tr>
           <tr>
-            <td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="#"><img src="<%= content.@ToolNewsStory3Image %>" alt="<%= content.@ToolNewsStory3ImageAlt %>" /></a></td>
-            <td valign="top" width="450" style="border-collapse:collapse; width:450px">
-              <div style="padding-top: 20px; padding-right:20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory3URL %>"></a><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory3Headline %></span></div>
-              <div class="text" style="padding-top: 10px; padding-right:20px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory3Text %></span></div>
-              <div style="padding-top: 10px; padding-right:20px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory3URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory3CTA %></span></a></div>
+            <td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="<%= content.@ToolNewsStory3URL %>"><img src="<%= content.@ToolNewsStory3Image %>" alt="<%= content.@ToolNewsStory3ImageAlt %>" /></a></td>
+            <td valign="top" width="450" style="border-collapse:collapse; padding-right:20px; width:450px">
+              <div style="padding-top: 20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory3URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory3Headline %></span></a></div>
+              <div class="text" style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory3Text %></span></div>
+              <div style="padding-top: 10px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory3URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory3CTA %></span></a></div>
             </td>
           </tr>
         </table>
@@ -269,9 +269,9 @@ var defer = function(blockText) {
               <td align="right" style="padding-right:20px; padding-top:20px;"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/events.png" alt="events" /></td>
             </tr>
             <tr>
-              <td colspan="2" style="padding-left:20px; padding-right: 180px; border-collapse: collapse;">
-                <div style="font-family: Arial, 'Helvetica Neue', Sans Serif; font-weight:bold; font-size:20pt; line-height: 140%;"><a style="text-decoration:none; color:#CC0000;" href="<%= content.@EventsURL %>"><span style="text-decoration:none; color:#CC0000;"><%= content.@EventsHeadline %></span></a></div>
-                <div style="color:#6F6F6F; font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:130%;"><%= content.@EventsText %></div>
+              <td colspan="2" style="padding-left:20px; padding-right: 20px; border-collapse: collapse;">
+                <div style="font-family: Arial, 'Helvetica Neue', Sans Serif; color:#CC0000; font-weight:bold; font-size:20pt; line-height: 110%; text-decoration:none"><a href="<%= content.@EventsURL %>"><span style="text-decoration:none; color:#CC0000;"><%= content.@EventsHeadline %></span></a></div>
+                <div style="color:#6F6F6F; font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:110%;"><%= content.@EventsText %></div>
                 <div style="padding-top: 15px; padding-bottom: 15px"><a href="<%= content.@EventsURL %>" style="font-family:Arial, Helvetica, sans-serif; font-size:12pt; line-height:150%; font-weight:bold; text-decoration:none; color:#56A753"><%= content.@EventsCTA %></a></div>
               </td>
             </tr>
@@ -297,60 +297,50 @@ var defer = function(blockText) {
               <td width="20" style="width: 20px">&nbsp;</td>
             </tr>
             <tr valign="bottom">
-              <td width="20" style="width: 20px;">&nbsp;</td>
-              <td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px;"><a href="<%= content.@FreeStuffStory1URL %>">
+              <td width="20" style="width: 20px; "></td>
+              <td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px; "><a href="<%= content.@FreeStuffStory1URL %>">
                 <img src="<%= content.@FreeStuffStory1Image %>" alt="<%= content.@FreeStuffStory1Alt %>" /></a>
               </td>
-              <td width="20" style="width: 20px;">&nbsp;</td>
-              <td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px;"><a href="<%= content.@FreeStuffStory2URL %>">
+              <td width="20" style="width: 20px; "></td>
+              <td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px; "><a href="<%= content.@FreeStuffStory2URL %>">
                 <img src="<%= content.@FreeStuffStory2Image %>" alt="<%= content.@FreeStuffStory2Alt %>" /></a>
               </td>
-              <td width="20" style="width: 20px;">&nbsp;</td>
+              <td width="20" style="width: 20px;"></td>
             </tr>
             <tr>
-              <td width="20" style="width: 20px;">&nbsp;</td>
-              <td width="270" style=" border-collapse: collapse; width:270px;">
+              <td width="20" style="width: 20px; padding-bottom: 20px;"></td>
+              <td valign="top" width="270" style=" border-collapse: collapse; width:270px;">
                 <div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@FreeStuffStory1URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@FreeStuffStory1Headline %></span></a></div>
                 <div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;"><%= content.@FreeStuffStory1Subtitle %></div>
-                <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory1Text %></div>
-                <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory1URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory1CTA %></span></a></div>
-              </td>
-              <td width="20" style="width: 20px;">&nbsp;</td>  
-              <td width="270" style=" border-collapse: collapse; width:270px;">
+              </td>  
+              <td width="20" style="width: 20px;"></td>  
+              <td valign="top" width="270" style="border-collapse: collapse; width:270px;">
                 <div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@FreeStuffStory2URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@FreeStuffStory2Headline %></span></a></div>
                 <div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;"><%= content.@FreeStuffStory2Subtitle %></div>
-                <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory2Text %></div>
-                <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory2URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory2CTA %></span></a></div>
               </td>
-              <td width="20" style="width: 20px;">&nbsp;</td>
+              <td width="20" style="width: 20px;"></td>
             </tr>
-            <tr valign="bottom">
-              <td width="20" style="width: 20px;">&nbsp;</td>
-              <td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px;"><a href="<%= content.@FreeStuffStory3URL %>">
-                <img src="<%= content.@FreeStuffStory3Image %>" alt="<%= content.@FreeStuffStory3Alt %>" /></a>
-              </td>
-              <td width="20" style="width: 20px;">&nbsp;</td>
-              <td width="270" style=" padding-top:20px; border-collapse: collapse; width:270px;"><a href="<%= content.@FreeStuffStory4URL %>">
-                <img src="<%= content.@FreeStuffStory4Image %>" alt="<%= content.@FreeStuffStory4Alt %>" /></a>
-              </td>
-              <td width="20" style="width: 20px;">&nbsp;</td>
+            <tr>
+              <td width="20" style="width: 20px; padding-bottom: 20px;">&nbsp;</td>  
+               <td width="270" style="border-collapse: collapse; width:270px;" valign="top">
+                <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory1Text %></div>
+        </td>
+        <td width="20" style="width: 20px; padding-bottom: 20px;">&nbsp;</td>
+        <td width="270" style="border-collapse: collapse; width:270px;" valign="top">
+                  <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory2Text %></div>
+        </td>
+        
             </tr>
-            <tr style="padding-bottom: 20px; border-collapse: collapse;">
-              <td width="20" style="width: 20px;">&nbsp;</td>
-              <td width="270" style=" border-collapse: collapse; width:270px;">
-                <div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@FreeStuffStory3URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@FreeStuffStory3Headline %></span></a></div>
-                <div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;"><%= content.@FreeStuffStory3Subtitle %></div>
-                <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory3Text %></div>
-                <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory3URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory3CTA %></span></a></div>
-              </td>
-              <td width="20" style="width: 20px;">&nbsp;</td>  
-              <td width="270" style=" border-collapse: collapse; width:270px;">
-                <div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@FreeStuffStory4URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@FreeStuffStory4Headline %></span></a></div>
-                <div style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#6F6F6F; font-size:14pt;"><%= content.@FreeStuffStory4Subtitle %></div>
-                <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><%= content.@FreeStuffStory4Text %></div>
-                <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory4URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory4CTA %></span></a></div>
-              </td>
-              <td width="20" style="width: 20px;">&nbsp;</td>
+            <tr>
+              <td width="20" style="width: 20px; padding-bottom: 20px;">&nbsp;</td>  
+               <td width="270" style="border-collapse: collapse; width:270px;">
+                  <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory1URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory1CTA %></span></a></div>
+        </td>
+        <td width="20" style="width: 20px;">&nbsp;</td>
+               <td width="270" style="border-collapse: collapse; width:270px;">
+                  <div style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><a style="text-decoration:none; color:#56A753" href="<%= content.@FreeStuffStory2URL %>"><span style="text-decoration:none; color:#56A753"><%= content.@FreeStuffStory2CTA %></span></a></div>
+        </td>
+      
             </tr>
           </table>
         </td>
@@ -373,7 +363,7 @@ var defer = function(blockText) {
               <a href="http://www.linkedin.com/company/red-gate-software"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/linkedin.png" alt="LinkedIn" /></a>
             </td>
             <td align="right" style="padding-right: 20px; padding-top:20px; border-collapse:collapse">
-              <a href="http://red-gate.com"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/RG-update-RG-logo_white.png" alt="Red Gate" /></a>
+              <a href="http://www.red-gate.com"><img src="http://assets.red-gate.com/external/red-gate-email/redgate-update/RG-update-RG-logo_white.png" alt="Red Gate" /></a>
             </td>
           </tr>
         </table>
