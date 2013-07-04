@@ -13,7 +13,8 @@
     <!-- Main Story Block (Top) -->
     
     <attribute label="Main Story Headline" name="MainStoryHeadline" type="string"/>
-    <attribute label="Main Story Body Text" name="MainStoryBody" type="string"/>
+    <attribute label="Main Story Body HTML Version" name="MainStoryBody" type="string"/>
+    <attribute label="Main Story Body Text Version" name="MainStoryBodyText" type="string"/>
     <attribute label="Main Story Link URL" name="MainStoryLinkURL" type="string"/>
     <attribute label="Main Story Call to Action" name="MainStoryLinkCTA" type="string"/>
     <attribute label="Main Story Image" name="MainStoryImage" type="string"/>
@@ -22,21 +23,24 @@
 	<!-- Tool News --> 
 	
 	<attribute label="Tool News Story 1 Headline" name="ToolNewsStory1Headline" type="string"/>
-	<attribute label="Tool News Story 1 Text" name="ToolNewsStory1Text" type="string"/>
+	<attribute label="Tool News Story 1 HTML Version" name="ToolNewsStory1Text" type="string"/>
+	<attribute label="Tool News Story 1 Text Version" name="ToolNewsStory1TextText" type="string"/>
 	<attribute label="Tool News Story 1 Link URL" name="ToolNewsStory1URL" type="string"/>
 	<attribute label="Tool News Story 1 Call to Action" name="ToolNewsStory1CTA" type="string"/>
 	<attribute label="Tool News Story 1 Image URL" name="ToolNewsStory1Image" type="string"/>
 	<attribute label="Tool News Story 1 Image Alt Tag" name="ToolNewsStory1ImageAlt" type="string"/>
     
     <attribute label="Tool News Story 2 Headline" name="ToolNewsStory2Headline" type="string"/>
-	<attribute label="Tool News Story 2 Text" name="ToolNewsStory2Text" type="string"/>
+	<attribute label="Tool News Story 2 HTML Version" name="ToolNewsStory2Text" type="string"/>
+	<attribute label="Tool News Story 2 Text Version" name="ToolNewsStory2TextText" type="string"/>
 	<attribute label="Tool News Story 2 Link URL" name="ToolNewsStory2URL" type="string"/>
 	<attribute label="Tool News Story 2 Call to Action" name="ToolNewsStory2CTA" type="string"/>
 	<attribute label="Tool News Story 2 Image URL" name="ToolNewsStory2Image" type="string"/>
 	<attribute label="Tool News Story 2 Image Alt Tag" name="ToolNewsStory2ImageAlt" type="string"/>
 	
 	<attribute label="Tool News Story 3 Headline" name="ToolNewsStory3Headline" type="string"/>
-	<attribute label="Tool News Story 3 Text" name="ToolNewsStory3Text" type="string"/>
+	<attribute label="Tool News Story 3 HTML Version" name="ToolNewsStory3Text" type="string"/>
+	<attribute label="Tool News Story 3 Text Version" name="ToolNewsStory3TextText" type="string"/>
 	<attribute label="Tool News Story 3 Link URL" name="ToolNewsStory3URL" type="string"/>
 	<attribute label="Tool News Story 3 Call to Action" name="ToolNewsStory3CTA" type="string"/>
 	<attribute label="Tool News Story 3 Image URL" name="ToolNewsStory3Image" type="string"/>
@@ -45,7 +49,8 @@
 	<!-- Events Section -->
 	
 	<attribute label="Events Headline" name="EventsHeadline" type="string"/>
-	<attribute label="Events Text" name="EventsText" type="string"/>
+	<attribute label="Events Body HTML Version" name="EventsText" type="string"/>
+	<attribute label="Events Body Text Version" name="EventsTextText" type="string"/>
 	<attribute label="Events Call to Action" name="EventsCTA" type="string"/>
 	<attribute label="Events Link URL" name="EventsURL" type="string"/>
 	<attribute label="Events Small Logo Image (Max Width 150px)" name="EventsSmallImageURL" type="string"/>
@@ -57,7 +62,8 @@
 	
 	<attribute label="Free Stuff Story 1 Headline" name="FreeStuffStory1Headline" type="string"/>
 	<attribute label="Free Stuff Story 1 Subtitle" name="FreeStuffStory1Subtitle" type="string"/>
-	<attribute label="Free Stuff Story 1 Text" name="FreeStuffStory1Text" type="string"/>
+	<attribute label="Free Stuff Story 1 Body HTML Version" name="FreeStuffStory1Text" type="string"/>
+	<attribute label="Free Stuff Story 1 Body Text Version" name="FreeStuffStory1TextText" type="string"/>
 	<attribute label="Free Stuff Story 1 Link URL" name="FreeStuffStory1URL" type="string"/>
 	<attribute label="Free Stuff Story 1 Call to Action" name="FreeStuffStory1CTA" type="string"/>
 	<attribute label="Free Stuff Story 1 Image URL" name="FreeStuffStory1Image" type="string"/>
@@ -65,7 +71,8 @@
 	
 	<attribute label="Free Stuff Story 2 Headline" name="FreeStuffStory2Headline" type="string"/>
 	<attribute label="Free Stuff Story 2 Subtitle" name="FreeStuffStory2Subtitle" type="string"/>
-	<attribute label="Free Stuff Story 2 Text" name="FreeStuffStory2Text" type="string"/>
+	<attribute label="Free Stuff Story 2 Body HTML Version" name="FreeStuffStory2Text" type="string"/>
+	<attribute label="Free Stuff Story 2 Body Text Version" name="FreeStuffStory2TextText" type="string"/>
 	<attribute label="Free Stuff Story 2 Link URL" name="FreeStuffStory2URL" type="string"/>
 	<attribute label="Free Stuff Story 2 Call to Action" name="FreeStuffStory2CTA" type="string"/>
 	<attribute label="Free Stuff Story 2 Image URL" name="FreeStuffStory2Image" type="string"/>
@@ -73,7 +80,8 @@
 	
 	<attribute label="Free Stuff Story 3 Headline" name="FreeStuffStory3Headline" type="string"/>
 	<attribute label="Free Stuff Story 3 Subtitle" name="FreeStuffStory3Subtitle" type="string"/>
-	<attribute label="Free Stuff Story 3 Text" name="FreeStuffStory3Text" type="string"/>
+	<attribute label="Free Stuff Story 3 Body HTML Version" name="FreeStuffStory3Text" type="string"/>
+	<attribute label="Free Stuff Story 3 Body Text Version" name="FreeStuffStory3TextText" type="string"/>
 	<attribute label="Free Stuff Story 3 Link URL" name="FreeStuffStory3URL" type="string"/>
 	<attribute label="Free Stuff Story 3 Call to Action" name="FreeStuffStory3CTA" type="string"/>
 	<attribute label="Free Stuff Story 3 Image URL" name="FreeStuffStory3Image" type="string"/>
@@ -81,7 +89,8 @@
 
 	<attribute label="Free Stuff Story 4 Headline" name="FreeStuffStory4Headline" type="string"/>
 	<attribute label="Free Stuff Story 4 Subtitle" name="FreeStuffStory4Subtitle" type="string"/>
-	<attribute label="Free Stuff Story 4 Text" name="FreeStuffStory4Text" type="string"/>
+	<attribute label="Free Stuff Story 4 Body HTML Version" name="FreeStuffStory4Text" type="string"/>
+	<attribute label="Free Stuff Story 4 Body Text Version" name="FreeStuffStory4TextText" type="string"/>
 	<attribute label="Free Stuff Story 4 Link URL" name="FreeStuffStory4URL" type="string"/>
 	<attribute label="Free Stuff Story 4 Call to Action" name="FreeStuffStory4CTA" type="string"/>
 	<attribute label="Free Stuff Story 4 Image URL" name="FreeStuffStory4Image" type="string"/>
