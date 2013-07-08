@@ -1,6 +1,6 @@
 ﻿<form _cs="EmailContentsRedGateUpdateV2 (rgs)" created="2013-06-20 09:44:44.623Z"
       createdBy-id="37932" entitySchema="xtk:form" img="rgs:RedGate.png" label="EmailContentsRedGateUpdateV2"
-      lastModified="2013-06-20 14:52:55.320Z" md5="5A661F3A88AD56F6CA8257F52CB8791A"
+      lastModified="2013-07-04 09:25:03.283Z" md5="994A3A4AF26405686B8CBE67B4A920C0"
       modifiedBy-id="37932" name="EmailContentsRedGateUpdateV2" namespace="rgs" type="contentForm"
       xtkschema="xtk:form">
   <createdBy _cs="dave.convery (dave.convery)"/>
@@ -10,53 +10,60 @@
     <set expr="'ExampleFor' + @xtkschema" xpath="@name"/>
   </enter>
 
-  <container codepage="1252" colcount="4">
-  
-  <container label="Stories and Events" type="frame">
-  
-    <container label="Main Story Details" type="frame">
-      <input xpath="@MainStoryHeadline"/>
-      <input xpath="@MainStoryBody"/>
-      <input xpath="@MainStoryLinkURL"/>
-      <input xpath="@MainStoryLinkCTA"/>
-      <input xpath="@MainStoryImage"/>
-      <input xpath="@MainStoryImageAlt"/>
+  <container codepage="1252" type="iconbox">
+
+    <container codepage="1252" label="Stories and Events">
+
+      <container codepage="1252" label="Main Story Details" type="frame">
+        <input xpath="@MainStoryHeadline"/>
+        <input xpath="@MainStoryBody"/>
+        <input xpath="@MainStoryBodyText"/>
+        <input xpath="@MainStoryLinkURL"/>
+        <input xpath="@MainStoryLinkCTA"/>
+        <input xpath="@MainStoryImage"/>
+        <input xpath="@MainStoryImageAlt"/>
+      </container>
+
+      <container codepage="1252" label="Events" type="Frame">
+        <input xpath="@EventsHeadline"/>
+        <input xpath="@EventsText"/>
+        <input xpath="@EventsTextText"/>
+        <input xpath="@EventsCTA"/>
+        <input xpath="@EventsURL"/>
+        <input xpath="@EventsSmallImageURL"/>
+        <input xpath="@EventsSmallImageAlt"/>
+        <input xpath="@EventsLargeImageURL"/>
+        <input xpath="@EventsLargeImageAlt"/>
+      </container>
+
     </container>
 
-    <container label="Events" type="Frame">
-      <input xpath="@EventsHeadline"/>
-      <input xpath="@EventsText"/>
-      <input xpath="@EventsCTA"/>
-      <input xpath="@EventsURL"/>
-      <input xpath="@EventsSmallImageURL"/>
-      <input xpath="@EventsLargeImageURL"/>
-    </container>
-    
-    </container>
+    <container codepage="1252" label="Tool News" colcount="2">
 
-    <container label="Tool News" type="frame">
-
-      <container label="Tool News Story 1" type="frame">
+      <container codepage="1252" label="Tool News Story 1" type="frame">
         <input xpath="@ToolNewsStory1Headline"/>
         <input xpath="@ToolNewsStory1Text"/>
+        <input xpath="@ToolNewsStory1TextText"/>
         <input xpath="@ToolNewsStory1URL"/>
         <input xpath="@ToolNewsStory1CTA"/>
         <input xpath="@ToolNewsStory1Image"/>
         <input xpath="@ToolNewsStory1ImageAlt"/>
       </container>
 
-      <container label="Tool News Story 2" type="frame">
+      <container codepage="1252" label="Tool News Story 2" type="frame">
         <input xpath="@ToolNewsStory2Headline"/>
         <input xpath="@ToolNewsStory2Text"/>
+        <input xpath="@ToolNewsStory2TextText"/>
         <input xpath="@ToolNewsStory2URL"/>
         <input xpath="@ToolNewsStory2CTA"/>
         <input xpath="@ToolNewsStory2Image"/>
         <input xpath="@ToolNewsStory2ImageAlt"/>
       </container>
 
-      <container label="Tool News Story 3" type="frame">
+      <container codepage="1252" label="Tool News Story 3" type="frame">
         <input xpath="@ToolNewsStory3Headline"/>
         <input xpath="@ToolNewsStory3Text"/>
+        <input xpath="@ToolNewsStory3TextText"/>
         <input xpath="@ToolNewsStory3URL"/>
         <input xpath="@ToolNewsStory3CTA"/>
         <input xpath="@ToolNewsStory3Image"/>
@@ -65,12 +72,13 @@
 
     </container>
 
-    <container label="Free Stuff" type="Frame">
+    <container codepage="1252" label="Free Stuff" colcount="2">
 
       <container label="FreeStuff Story 1" type="frame">
         <input xpath="@FreeStuffStory1Headline"/>
         <input xpath="@FreeStuffStory1Subtitle"/>
         <input xpath="@FreeStuffStory1Text"/>
+        <input xpath="@FreeStuffStory1TextText"/>
         <input xpath="@FreeStuffStory1URL"/>
         <input xpath="@FreeStuffStory1CTA"/>
         <input xpath="@FreeStuffStory1Image"/>
@@ -81,20 +89,18 @@
         <input xpath="@FreeStuffStory2Headline"/>
         <input xpath="@FreeStuffStory2Subtitle"/>
         <input xpath="@FreeStuffStory2Text"/>
+        <input xpath="@FreeStuffStory2TextText"/>
         <input xpath="@FreeStuffStory2URL"/>
         <input xpath="@FreeStuffStory2CTA"/>
         <input xpath="@FreeStuffStory2Image"/>
         <input xpath="@FreeStuffStory2Alt"/>
       </container>
 
-    </container>
-    
-    <container label="Free Stuff" type="Frame">
-
       <container label="FreeStuff Story 3" type="frame">
         <input xpath="@FreeStuffStory3Headline"/>
         <input xpath="@FreeStuffStory3Subtitle"/>
         <input xpath="@FreeStuffStory3Text"/>
+        <input xpath="@FreeStuffStory3TextText"/>
         <input xpath="@FreeStuffStory3URL"/>
         <input xpath="@FreeStuffStory3CTA"/>
         <input xpath="@FreeStuffStory3Image"/>
@@ -105,6 +111,7 @@
         <input xpath="@FreeStuffStory4Headline"/>
         <input xpath="@FreeStuffStory4Subtitle"/>
         <input xpath="@FreeStuffStory4Text"/>
+        <input xpath="@FreeStuffStory4TextText"/>
         <input xpath="@FreeStuffStory4URL"/>
         <input xpath="@FreeStuffStory4CTA"/>
         <input xpath="@FreeStuffStory4Image"/>

@@ -249,8 +249,8 @@ var defer = function(blockText) {
             </td>
           </tr>
           <tr>
-            <td width="150" valign="middle" style="padding-left:20px; padding-top:20px; border-collapse:collapse; width:150px;"><a href="<%= content.@ToolNewsStory3URL %>"><img src="<%= content.@ToolNewsStory3Image %>" alt="<%= content.@ToolNewsStory3ImageAlt %>" /></a></td>
-            <td valign="top" width="450" style="border-collapse:collapse; padding-right:20px; width:450px">
+            <td width="150" valign="middle" style="padding-left:20px; padding-top:20px; padding-bottom: 20px; border-collapse:collapse; width:150px;"><a href="<%= content.@ToolNewsStory3URL %>"><img src="<%= content.@ToolNewsStory3Image %>" alt="<%= content.@ToolNewsStory3ImageAlt %>" /></a></td>
+            <td valign="top" width="450" style="border-collapse:collapse; padding-right:20px; padding-bottom: 20px; width:450px">
               <div style="padding-top: 20px;"><a style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;" href="<%= content.@ToolNewsStory3URL %>"><span style="font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#CC0000; font-size:18pt; text-decoration:none;"><%= content.@ToolNewsStory3Headline %></span></a></div>
               <div class="text" style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; color:#6F6F6F; font-size:10pt;"><span class="text"><%= content.@ToolNewsStory3Text %></span></div>
               <div style="padding-top: 10px;"><a style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;" href="<%= content.@ToolNewsStory3URL %>"><span style="text-decoration:none; color:#56A753; font-family:Arial, Helvetica, sans-serif; font-size:10pt; font-weight:bold;"><%= content.@ToolNewsStory3CTA %></span></a></div>
